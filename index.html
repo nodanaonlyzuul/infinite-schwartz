@@ -55,15 +55,15 @@
 
     <script>
       var soundArray = [
-        new buzz.sound("/assets/audio/1", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("/assets/audio/2", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("/assets/audio/3", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("/assets/audio/6", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("/assets/audio/7", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("/assets/audio/8", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("/assets/audio/9", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("/assets/audio/10", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("/assets/audio/11", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()})
+        new buzz.sound("assets/audio/1", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
+        new buzz.sound("assets/audio/2", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
+        new buzz.sound("assets/audio/3", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
+        new buzz.sound("assets/audio/6", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
+        new buzz.sound("assets/audio/7", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
+        new buzz.sound("assets/audio/8", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
+        new buzz.sound("assets/audio/9", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
+        new buzz.sound("assets/audio/10", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
+        new buzz.sound("assets/audio/11", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()})
       ];
 
       function shitShow() {
@@ -73,7 +73,7 @@
       }
 
       $(function(){
-        new buzz.sound("/assets/audio/intro", {formats: ["ogg", "mp3"]}).bind('ended', function(e) {shitShow()}).play();
+        new buzz.sound("assets/audio/intro", {formats: ["ogg", "mp3"]}).bind('ended', function(e) {shitShow()}).play();
       })
     </script>
   </body>
