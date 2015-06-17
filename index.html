@@ -55,17 +55,12 @@
     </div>
 
     <script>
-      var soundArray = [
-        new buzz.sound("assets/audio/1", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("assets/audio/2", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("assets/audio/3", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("assets/audio/6", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("assets/audio/7", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("assets/audio/8", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("assets/audio/9", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("assets/audio/10", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}),
-        new buzz.sound("assets/audio/11", {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()})
-      ];
+      //4,5
+      var soundArray = []
+      for(var i = 1; i <= 12; i++){
+        console.log(i)
+        soundArray.push(new buzz.sound("assets/audio/"+i, {formats: ["ogg", "mp3"], preload: true}).bind('ended', function(e){shitShow()}))
+      }
 
       function shitShow() {
         //rewind all sounds because each sound preserves its state
