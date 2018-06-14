@@ -50,6 +50,7 @@
         <div>
            Pontification
         </div>
+        <p><a id='playButton' href="#" style='color: #000;'>Play</a></p>
       </span>
       <img class="charlie-bg" src="assets/images/jonjon.jpg"></img>
     </div>
@@ -68,9 +69,18 @@
         setTimeout(500, _.shuffle(soundArray)[0].play())
       }
 
-      $(function(){
+      function startEverything () {
         new buzz.sound("assets/audio/intro", {formats: ["ogg", "mp3"]}).bind('ended', function(e) {shitShow()}).play();
-      })
+      };
+
+      $(function(){
+        $('#playButton').on('click', function (e) {
+          startEverything();
+          $(e.target).fadeOut(600);
+        });
+      });
+
+
     </script>
   </body>
 </html>
